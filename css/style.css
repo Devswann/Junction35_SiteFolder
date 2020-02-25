@@ -1,0 +1,1642 @@
+/* FUNCTION */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+a.active  {
+    color: #CA8F42;
+}
+
+/* COLORS */
+
+.goldFont {
+    color: #CA8F42;
+}
+
+.goldBack {
+    background: #CA8F42;
+}
+
+.blackFont {
+    color: #202121;
+}
+
+.blackBack {
+    background: #202121;
+}
+
+.lbrownFont {
+    color: #AB9C8F;
+}
+
+.lbrownBack {
+    background: #AB9C8F;
+}
+
+.brownFont {
+    color: #856444;
+}
+
+.brownBack {
+    background: #856444;
+}
+
+.whiteFont {
+    color: #D1D4D3;
+}
+
+.whiteBack {
+    background: #D1D4D3;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Barbaro';
+    src: url(../assets/fonts/barbaro.ttf);
+    font-weight: normal;
+}
+
+#preloaderVideo {
+    
+width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Whitman Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    overflow-x: hidden;
+    background-color: #D1D4D3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barbaro', sans-serif;
+}
+
+h1 {
+    font-size: 3.2vw;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #856444;
+}
+
+button:focus {
+    outline: 0em;
+}
+
+input:focus {
+    outline: 0em;
+}
+
+form:focus {
+    outline: 0em;
+}
+
+#loader {
+    position: absolute;
+    background: black;
+    width: -webkit-fill-available;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+}
+
+.contactPanel h3 {
+    margin-top: 2rem;
+}
+
+.headerHolder h1 {
+    color: #D1D4D3;
+}
+/* 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap 
+*/
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575px) {
+    #contactRightColumn h1 {
+        font-size: 8vw;
+        display: none;
+    }
+    
+    #toGoContainer {
+        text-align: center;
+        margin: auto;
+    }
+
+    #toGoContainer h2 {
+        color: #D1D4D3;
+        font-size: 8vw;
+        padding: 2rem;
+    }
+
+    #toGoBtn {
+        background-color: #856444;
+        border: none;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 11rem;
+        width: 70%;
+        margin-bottom: 8vw;
+    }
+
+    .storyText h1 {
+        font-size: 7vw;
+        margin-top: 2rem;
+    }
+
+    #map {
+        margin-top: 2rem;
+    }
+
+    .brand-holder {
+        background-color: #D1D4D3;
+        padding: 1rem;
+        margin: 0;
+        padding-left: 0.4rem;
+    }
+
+    .navbar-toggler-icon {
+        color: #D1D4D3;
+        font-size: 2.2rem;
+    }
+
+    .spiritsBio h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    a.nav-item {
+        font-size: 4vw;
+    }
+
+    .navbar-toggler-icon i {
+        padding-top: 0.5rem;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: ABSOLUTE;
+        z-index: 1;
+        background: #202121;
+        top: 15.2vw;
+        width: 100%;
+    }
+
+    .kitchenShowpage {
+        background: url(../assets/images/kitchenBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+    }
+
+    .kitchenShowpage H1 {
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 9vw;
+        padding-bottom: 3rem;
+    }
+
+    #map {
+        width: 100%;
+        height: 42vw;
+        background-color: grey;
+      }
+
+    .kitchenShowpage .container {
+        max-width: 90%;
+    }
+    
+    .navbar-brand {
+        font-size: 5.6vw;
+        padding: 0;
+        border-bottom: 1px solid #202121;
+        color: #202121;
+        font-family: 'Barbaro', sans-serif;
+        margin-left: 1rem;
+    }
+    
+    #numLogo {
+        font-size: 6.2vw;
+    }
+    
+    .nav-item {
+        color: #D1D4D3;
+        padding: 1rem;
+        font-family: 'Barbaro', sans-serif;
+        padding-right: 1rem;
+        font-size: 1.4VW;
+        padding-left: 1rem;
+        letter-spacing: .2rem;
+    }
+    
+    .navbar {
+        padding: 0;
+        background-color: #202121;
+    }
+    
+    #headerVideo {
+        position: absolute;
+        z-index: -1;
+        width: inherit;
+        height: auto;
+    }
+    
+    a:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+
+    a.fab:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+    
+    a {
+        color: #202121;
+    }
+    
+    .choicesPanel h1     {
+        background-color: #202121;
+        width: fit-content;
+        padding: 1rem;
+        color: white;
+        border: solid 7px #856444;
+        margin: auto;
+        font-size: 7vw;
+    }
+    
+    .choicesPanel a {
+        margin: auto;
+    }
+    
+    .distilleryPanelHover {
+        display: flex;
+        background: url(../assets/images/distilleryHover.png);
+        height: 66vw;
+        display: flex;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .kitchenPanelHover {
+        background: url(../assets/images/menuHover.png);
+        height: 66vw;
+        display: flex;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: scroll;
+    }
+    
+    .newsletterPanel {
+        background-color: #856444;
+        text-align: center;
+        width: 99.3vw;
+    }
+    
+    .newsletterPanel h2 {
+        padding: 0.5em;
+        color: #D1D4D3;
+        margin: 0;
+        font-size: 6vw;
+        letter-spacing: 0.1rem;
+    }
+    
+    .contactPanel {
+        background-color: #D1D4D3;
+        text-align: center;
+        /* padding-top: 3rem; */
+        color: black;
+        padding-bottom: 2rem;
+    }
+    
+    .contactPanel p {
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: normal;
+    }
+    
+    .copyrightPanel {
+        background-color: #202121;
+        color: #856444;
+        text-align: center;
+        width: 99.2vw;
+    }
+    
+    .copyrightPanel p {
+        padding: 2rem;
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+    
+    .spiritsHeader {
+        background-color: #D1D4D3;
+        text-align: center;
+        /* padding-top: 3rem; */
+        padding-bottom: 2rem;
+    }
+    
+    .spiritsHeader h2 {
+        display: none;
+        font-size: 11vw;
+        margin-bottom: 3rem;
+        letter-spacing: 0.1rem;
+        color: #856444;
+    }
+    
+    .spiritsHeader p {
+        margin: 0;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+    
+    .distilleryHeader {
+        background: url(../assets/images/distilleryMainImage.png);
+        display: flex;
+        height: 54vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .homeHeader {
+        display: flex;
+        height: 54vw;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .headerHolder {
+        margin: auto;
+        color: white;
+    }
+    
+    .headerHolder h1 {
+        font-size: 13vw;
+        letter-spacing: 0.6rem;
+        color: #D1D4D3;
+    }
+    
+    .spiritsTextKitchen {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .spiritsText {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: auto;
+    }
+
+    .storyText p {
+        font-size: 3.4vw;
+        text-align: left;
+    }
+
+    .spiritsBio p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsShowpage {
+        background: url(../assets/images/spiritsShowcaseBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .navbar-nav {
+    text-align: center;
+    width: 100%;
+    }
+    
+    .spiritsDisplayColumn {
+        margin: auto;
+        width: 80%;
+        padding-top: 3rem;
+    }
+    
+    .spiritsDisplayColumn:last-child {
+        padding-bottom: 0rem;
+    }
+    
+    .spiritsBio {
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .fab {
+        font-size: 3rem;
+        margin: auto 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        text-align: left;
+    }
+
+    .menuContainer p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .menuContainer h2 {
+        width: 80%;
+        font-size: 6vw;
+    }
+
+    .menuContainer span {
+        display: block;
+        margin-left: auto;
+    }
+
+    .kitchenShowpage h4 {
+        text-align: center;
+        /* margin-right: 10.5rem; */
+        font-size: 1.3rem;
+        font-style: italic;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+
+    .kitchenShowpageRightColumn h1 {
+        margin-left: 4.3vw;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer {
+        margin-left: 1rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer h2 {
+        width: 100%;
+    }
+
+    #pricingStyleRight {
+        width: 60%;
+        text-align: center;
+        margin-left: 9.1vw;
+        font-size: 6.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    #pricingStyleLeft {
+        width: 60%;
+        text-align: center;
+        margin-left: 1.5vw;
+        font-size: 6.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer p {
+        width: 90%;
+    }
+
+    .kitchenShowpageLeftColumn h1 {
+        margin-right: 9.5vw;
+    }
+
+    #ribsParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 9.5vw;
+    }
+
+    #bbqParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 3vw;
+    }
+
+    #sidesMenu {
+        margin-right: 10vw;
+}
+
+    #kidsMenu {
+        margin-left: 5.6vw;
+    }
+
+    .divider {
+        height: .3rem;
+        width: 85%;
+        background-color: #CA8F42;
+        margin: auto;    
+    }
+
+    .menuContainer p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsBio p {
+        font-size: 3.3vw;
+    }
+
+    #aboutImage {
+        width: 100%;
+        height: 41vw;
+    }
+
+    #contactRightColumn h3 {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    .kitchenHeader {
+        background: url(../assets/images/kitchenHeader.jpg);
+        display: flex;
+        height: 14.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (min-width: 576px) { 
+    
+    #contactRightColumn h1 {
+        font-size: 8vw;
+        display: none;
+    }
+
+ 
+
+    .storyText h1 {
+        font-size: 7vw;
+        margin-top: 2rem;
+    }
+
+    #map {
+        margin-top: 2rem;
+    }
+
+    .brand-holder {
+        background-color: #D1D4D3;
+        padding: 1rem;
+        margin: 0;
+        padding-left: 0.4rem;
+    }
+
+    .navbar-toggler-icon {
+        color: #D1D4D3;
+        font-size: 2.2rem;
+    }
+
+    .spiritsBio h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    a.nav-item {
+        font-size: 1.4vw;
+        margin-left: auto;
+    }
+
+    .navbar-toggler-icon i {
+        padding-top: 0.5rem;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: ABSOLUTE;
+        z-index: 1;
+        background: #202121;
+        top: 12.6vw;
+        width: 100%;
+    }
+
+    .kitchenShowpage {
+        background: url(../assets/images/kitchenBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+    }
+
+    .kitchenShowpage H1 {
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 4.4vw;
+        padding-bottom: 3rem;
+    }
+
+    #map {
+        width: 100%;
+        height: 42vw;
+        background-color: grey;
+      }
+
+    .kitchenShowpage .container {
+        max-width: 90%;
+    }
+    
+    .navbar-brand {
+        font-size: 5.6vw;
+        padding: 0;
+        border-bottom: 1px solid #202121;
+        color: #202121;
+        font-family: 'Barbaro', sans-serif;
+        margin-left: 1rem;
+    }
+    
+    #numLogo {
+        font-size: 6.2vw;
+        color: #856444;
+    }
+    
+    .nav-item {
+        color: #D1D4D3;
+        padding: 1rem;
+        font-family: 'Barbaro', sans-serif;
+        padding-right: 1rem;
+        font-size: 1.4VW;
+        padding-left: 1rem;
+        letter-spacing: .2rem;
+    }
+    
+    .navbar {
+        padding: 0;
+        background-color: #202121;
+    }
+    
+    #headerVideo {
+        position: absolute;
+        z-index: -1;
+        width: inherit;
+        height: auto;
+    }
+    
+    a:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+
+    a.fab:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+    
+    a {
+        color: #202121;
+    }
+    
+    .choicesPanel h1     {
+        background-color: #202121;
+        width: fit-content;
+        padding: 1rem;
+        color: white;
+        border: solid 7px #856444;
+        margin: auto;
+        font-size: 4vw;
+    }
+    
+    .choicesPanel a {
+        margin: auto;
+    }
+    
+    .distilleryPanelHover {
+        display: flex;
+        background: url(../assets/images/distilleryHover.png);
+        height: 66vw;
+        display: flex;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .kitchenPanelHover {
+        background: url(../assets/images/menuHover.png);
+        height: 66vw;
+        display: flex;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: scroll;
+        -webkit-background-size: 1920px 960px;
+        -moz-background-size: cover;
+        background-size: cover;
+
+    }
+    
+    .newsletterPanel {
+        background-color: #856444;
+        text-align: center;
+    }
+    
+    .newsletterPanel h2 {
+        padding: 0.5em;
+        color: #D1D4D3;
+        margin: 0;
+        font-size: 4vw;
+        letter-spacing: 0.1rem;
+    }
+    
+    .contactPanel {
+        background-color: #D1D4D3;
+        text-align: center;
+        /* padding-top: 3rem; */
+        padding-bottom: 2rem;
+        color: black;
+    }
+    
+    .contactPanel p {
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: normal;
+    }
+    
+    .copyrightPanel {
+        background-color: #202121;
+        color: #856444;
+        text-align: center;
+    }
+    
+    .copyrightPanel p {
+        padding: 2rem;
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+        font-size: 2.2vw;
+    }
+    
+    .spiritsHeader {
+        background-color: #D1D4D3;
+        text-align: center;
+        /* padding-top: 3rem; */
+        padding-bottom: 2rem;
+    }
+    
+    .spiritsHeader h2 {
+        display: none;
+        font-size: 11vw;
+        margin-bottom: 3rem;
+        letter-spacing: 0.1rem;
+        color: #856444;
+    }
+    
+    .spiritsHeader p {
+        margin: 0;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+    
+    .distilleryHeader {
+        background: url(../assets/images/distilleryMainImage.png);
+        display: flex;
+        height: 54vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .homeHeader {
+        display: flex;
+        height: 54vw;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .headerHolder {
+        margin: auto;
+        color: white;
+    }
+    
+    .headerHolder h1 {
+        font-size: 13vw;
+        letter-spacing: 0.6rem;
+        color: #D1D4D3;
+    }
+    
+    .spiritsTextKitchen {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .spiritsText {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: auto;
+    }
+
+    .storyText p {
+        font-size: 3.4vw;
+        text-align: left;
+    }
+
+    .spiritsBio p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsShowpage {
+        background: url(../assets/images/spiritsShowcaseBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+    }
+
+    .navbar-nav {
+    text-align: center;
+    width: 100%;
+    }
+    
+    .spiritsDisplayColumn {
+        margin: auto;
+        width: 80%;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    
+    .spiritsDisplayColumn:last-child {
+        padding-bottom: 0rem;
+    }
+    
+    .spiritsBio {
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .fab {
+        font-size: 3rem;
+        margin: auto 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .menuContainer p {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .menuContainer h2 {
+        width: 80%;
+        font-size: 5vw;
+    }
+
+    .menuContainer span {
+        /* float: right; */
+        display: block;
+        margin-left: auto;
+    }
+
+    .kitchenShowpage h4 {
+        text-align: center;
+        /* margin-right: 10.5rem; */
+        font-size: 1.7rem;
+        font-style: italic;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+
+    .kitchenShowpageRightColumn h1 {
+        margin-left: 6.3vw;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer {
+        margin-left: 6rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer h2 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    #pricingStyleRight {
+        width: 60%;
+        text-align: center;
+        margin-left: 11.1vw;
+        font-size: 2.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    #pricingStyleLeft {
+        width: 60%;
+        text-align: center;
+        margin-left: 3.5vw;
+        font-size: 2.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer p {
+        width: 90%;
+    }
+
+    .kitchenShowpageLeftColumn h1 {
+        margin-right: 8.5vw;
+    }
+
+    #ribsParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 11.5vw;
+    }
+
+    #bbqParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 3vw;
+    }
+
+    #sidesMenu {
+        margin-right: 10vw;
+}
+
+    #kidsMenu {
+        margin-left: 5.6vw;
+    }
+
+    .divider {
+        height: .3rem;
+        width: 85%;
+        background-color: #CA8F42;
+        margin: auto;    
+    }
+
+    .menuContainer p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsBio p {
+        font-size: 3.3vw;
+    }
+
+    #aboutImage {
+        width: 100%;
+        height: 41vw;
+    }
+
+    #contactRightColumn h3 {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    .kitchenHeader {
+        background: url(../assets/images/kitchenHeader.jpg);
+        display: flex;
+        height: 33.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #toGoContainer {
+        text-align: center;
+        margin: auto;
+    }
+
+    #toGoContainer h2 {
+        color: #D1D4D3;
+        font-size: 4vw;
+        padding-top: 3vw;
+        padding-bottom: 2vw;
+    }
+
+    #toGoBtn {
+        background-color: #856444;
+        border: none;
+        color: white;
+        padding: 1rem;
+        border-radius: 11rem;
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    .spiritsShowpage img {
+        padding: 0;
+        margin: auto;
+    }
+
+    a.nav-item {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .storyText h1 {
+        font-size: 3vw;
+        margin-top: 0;
+    }
+
+    .ac-overlay {
+        height: -webkit-fill-available;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        background: black;
+        width: 100%;
+    }
+
+    .ac-container {
+        top: 22%;
+        width: 85vw;
+        /* left: 21vw; */
+        opacity: 1;
+        left: 8vw;
+        height: 40vw;
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 16vw;
+        padding-right: 16vw;
+        padding-top: 9vw;
+        background-size: cover;
+    }
+
+    .ac-container img {
+        position: absolute;
+        width: 45vw;
+        right: 5vw;
+        top: -2.5vw;
+    }
+
+    .ac-container p {
+        width: 50%;
+        color: #D1D4D3;
+        font-size: 1.2vw;
+    }
+
+    .ac-container h2 {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        color: #D1D4D3;
+    }
+
+    .ac-container .fields {
+        margin-top: 1vw;
+        z-index: 2;
+    }
+
+    .ac-container .day {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 4vw;
+        height: 3vw;
+        border-radius: 1rem;
+        margin-left: 1vw;
+        padding-left: 1.5vw;
+        -webkit-highlight: none;
+    }
+
+    .ac-container .month {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 11vw;
+        height: 3vw;
+        border-radius: 1rem;
+        padding-left: 1vw;
+        -webkit-highlight: none;
+}
+
+    ::placeholder {
+        color: white;
+    }
+
+    .ac-container .year {
+        background: #202121;
+        color: white;
+        border: none;
+        margin-left: 1vw;
+        width: 5vw;
+        height: 3vw;
+        border-radius: 1rem;
+        padding-left: 1.3vw;
+        -webkit-highlight: none;
+        margin-top: 1vw;
+    }
+
+    .ac-container button {
+        display: block;
+        margin-top: 3rem;
+        width: 11vw;
+        border-radius: 1rem;
+        height: 2.5vw;
+        background: #202121;
+        color: white;
+        border: none;
+    }
+
+    .spiritsBio h2 {
+        font-size: 3vw;
+    }
+
+    .brand-holder {
+        background-color: #D1D4D3;
+        padding: 1rem;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: static;
+    }
+
+    .kitchenShowpage {
+        background: url(../assets/images/kitchenBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+    }
+
+    .kitchenShowpage H1 {
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 4vw;
+        padding-bottom: 3rem;
+    }
+
+    #map {
+        width: 100%;
+        height: 42vw;
+        background-color: grey;
+      }
+
+    .kitchenShowpage .container {
+        max-width: 90%;
+    }
+    
+    .navbar-brand {
+        font-size: 3.6vw;
+        padding: 0;
+        border-bottom: 1px solid #202121;
+        color: #202121;
+        font-family: 'Barbaro', sans-serif;
+        margin-left: 1rem;
+    }
+    
+    #numLogo {
+        font-size: 4vw;
+        color: #856444;
+    }
+    
+    .navbar-nav {
+        margin-left: auto;
+    }
+    
+    .nav-item {
+        color: #D1D4D3;
+        padding: 1rem;
+        font-family: 'Barbaro', sans-serif;
+        padding-right: 1rem;
+        font-size: 1.4VW;
+        padding-left: 1rem;
+        letter-spacing: .2rem;
+    }
+    
+    .navbar {
+        padding: 0;
+        background-color: #202121;
+    }
+    
+    #headerVideo {
+        position: absolute;
+        z-index: -1;
+        width: inherit;
+        height: auto;
+    }
+    
+    a:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+
+    a.fab:hover {
+        color: #CA8F42;
+        transition: ease .5s;
+    }
+    
+    a {
+        color: #202121;
+    }
+    
+    .choicesPanel h1     {
+        background-color: #202121;
+        width: fit-content;
+        padding: 1rem;
+        color: white;
+        border: solid 7px #856444;
+        margin: auto;
+    }
+    
+    .choicesPanel a {
+        margin: auto;
+        text-decoration: none;
+    }
+    
+    .distilleryPanelHover {
+        display: flex;
+        background: url(../assets/images/distilleryHover.png);
+        height: 40.6rem;
+        background-size: cover;
+        padding: 0;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    
+    .kitchenPanelHover {
+        background: url(../assets/images/menuHover.png);
+        display: flex;
+        padding: 0;
+        background-size: cover;
+        height: inherit;
+        background-size: cover;
+        padding: 0;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: scroll;
+        
+    }
+    
+    .newsletterPanel {
+        background-color: #856444;
+        text-align: center;
+    }
+    
+    .newsletterPanel h2 {
+        padding: 0.5em;
+        padding-top: .7em;
+        color: #D1D4D3;
+        margin: 0;
+        font-size: 2vw;
+        letter-spacing: 0.1rem;
+    }
+    
+    .contactPanel {
+        background-color: #D1D4D3;
+        text-align: center;
+        color: black;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .contactPanel p {
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: normal;
+    }
+    
+    .copyrightPanel {
+        background-color: #202121;
+        color: #856444;
+        text-align: center;
+        width: 99.2vw;
+    }
+    
+    .copyrightPanel p {
+        padding: 2rem;
+        margin: 0;
+        font-size: 1vw;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsHeader {
+        background-color: #D1D4D3;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .spiritsHeader h2 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        letter-spacing: 0.1rem;
+        color: #856444;
+    }
+    
+    .spiritsHeader p {
+        margin: 0;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+    
+    .distilleryHeader {
+        background: url(../assets/images/distilleryMainImage.png);
+        display: flex;
+        height: 33.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .homeHeader {
+        display: flex;
+        height: 40.5rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .headerHolder {
+        margin: auto;
+        color: white;
+    }
+    
+    .headerHolder h1 {
+        font-size: 10rem;
+        letter-spacing: 0.6rem;
+        color: #D1D4D3;
+    }
+    
+    .spiritsTextKitchen {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .spiritsText {
+        width: 80%;
+        margin: auto;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: auto;
+    }
+
+    .storyText p {
+        font-size: 1.4vw;
+        text-align: left;
+    }
+
+    .spiritsBio p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsShowpage {
+        background: url(../assets/images/spiritsShowcaseBackground.jpg);
+        background-repeat: no-repeat;
+        color: #D1D4D3;
+        background-size: cover;
+    }
+
+    .navbar-nav {
+        align-items: inherit;
+        justify-content: space-evenly;
+    }
+    
+    .spiritsDisplayColumn {
+        margin: auto;
+        width: 80%;
+        padding-top: 5rem;
+    }
+    
+    .spiritsDisplayColumn:last-child {
+        padding-bottom: 5rem;
+    }
+    
+    .spiritsBio {
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+    }
+    
+    .fab {
+        font-size: 3rem;
+        margin: auto 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .menuContainer p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .menuContainer h2 {
+        width: 80%;
+        font-size: 2.2vw;
+    }
+
+    .menuContainer span {
+        float: right;
+        margin-left: auto;
+    }
+
+    .kitchenShowpage h4 {
+        text-align: center;
+        /* margin-right: 10.5rem; */
+        font-size: 1.7rem;
+        font-style: italic;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+
+    .kitchenShowpageRightColumn h1 {
+        margin-left: 6.3vw;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer {
+        margin-left: 6rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer h2 {
+        width: 100%;
+        font-size: 2.3vw;
+    }
+
+    #pricingStyleRight {
+        width: 60%;
+        text-align: center;
+        margin-left: 11.1vw;
+        font-size: 2.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    #pricingStyleLeft {
+        width: 60%;
+        text-align: center;
+        margin-left: 3.5vw;
+        font-size: 2.3vw;
+        font-style: normal;
+        font-family: 'barbaro', sans-serif;
+        margin-bottom: 3rem;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer p {
+        width: 90%;
+    }
+
+    .kitchenShowpageLeftColumn h1 {
+        margin-right: 9.5vw;
+    }
+
+    #ribsParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 11.5vw;
+    }
+
+    #bbqParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 3vw;
+    }
+
+    #sidesMenu {
+        margin-right: 10vw;
+}
+
+    #kidsMenu {
+        margin-left: 5.6vw;
+    }
+
+    .divider {
+        height: .3rem;
+        width: 85%;
+        background-color: #CA8F42;
+        margin: auto;    
+    }
+
+    .menuContainer p {
+        font-family: 'whitman-display', sans-serif;
+        font-weight: 600;
+    }
+    
+    .spiritsBio p {
+        font-size: 1.3vw;
+    }
+
+    #aboutImage {
+        width: 100%;
+        height: 41vw;
+    }
+
+    #contactRightColumn h3 {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 2.5vw;
+    }
+
+    #toGoContainer {
+        text-align: center;
+        margin: auto;
+    }
+
+    #toGoContainer h2 {
+        color: #D1D4D3;
+        font-size: 4vw;
+        padding-bottom: 2vw;
+    }
+
+    #toGoBtn {
+        background-color: #856444;
+        border: none;
+        color: white;
+        padding: 1rem;
+        border-radius: 11rem;
+        width: 100%;
+        outline: none;
+    }
+
+    .spiritsShowpage img {
+        padding: 0;
+        margin: auto;
+    }
+
+ }

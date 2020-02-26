@@ -13,14 +13,16 @@ async function preLoader(callback) {
     $(this).remove();
 }
 
-window.addEventListener('load', preLoader(yBar))
-
 function yBar() {
     $("html").css("overflow-y", "scroll")
 }
 
-$(document).ready(function(){ 
+window.addEventListener('load', preLoader(yBar))
+
+
+$(document).ready(function(callback){ 
     //THIS CODE IS ONLY NEEDED FOR DEMO:
+    if (ageCheck)
     var minAge = $('select').val();
     $('select').on('change', function(){
        minAge = $(this).val(); 
@@ -28,9 +30,10 @@ $(document).ready(function(){
     $('button').on('click', function(){
         $.ageCheck({minAge: minAge});
     });
+    $("html").css("overflow-y", "hidden");
     //END DEMO CODE.
     //THIS IS ALL YOU NEED FOR PLUGIN:
-    $.ageCheck({minAge: minAge});       
+    $.ageCheck({minAge: minAge}, callback);       
 });
 
 

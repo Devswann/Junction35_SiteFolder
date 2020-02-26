@@ -6,14 +6,18 @@
 //     });
 // });
 
-window.addEventListener('load', 
-  function() { 
+async function preLoader(callback) {
     $('#loader').removeAttr("preload").delay(2000)
-    $('#loader').fadeOut('slow')
+    $('#loader').fadeOut('slow', callback)
     console.log('Hit')
     $(this).remove();
-    $("body").css("overflow-y", "scroll")
-  }, false);
+}
+
+window.addEventListener('load', preLoader(yBar))
+
+function yBar() {
+    $("html").css("overflow-y", "scroll")
+}
 
 $(document).ready(function(){ 
     //THIS CODE IS ONLY NEEDED FOR DEMO:
@@ -27,7 +31,8 @@ $(document).ready(function(){
     //END DEMO CODE.
     //THIS IS ALL YOU NEED FOR PLUGIN:
     $.ageCheck({minAge: minAge});       
-});  
+});
+
 
 $('.distilleryPanelHover').hover(function () {
         // over

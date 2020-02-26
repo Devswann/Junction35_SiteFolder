@@ -3,11 +3,79 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.demo select {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 2px;
+}
+.demo h3 {
+    font-family:'Bree Serif', arial; 
+    font-weight:bold; 
+    font-size:30px; 
+    text-align:center; 
+    border-bottom:1px dashed #ccc;  
+    padding:0 0 20px 0; 
+    line-height:38px;
+}
+.demo p {
+    
+    font-family: georgia, serif; 
+    font-size:18px; 
+    line-height:26px; 
+    text-align:center;
+    margin-bottom:10px;
+    color:#ADADAD;
+}
+.demo button {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top:5px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 4px 20px 6px 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    background:#8EB908;
+    color:#fff; 
+    text-shadow:1px 1px 0 #84A51D;
+    font-family: 'Bree Serif', serif; 
+}
+.demo button:hover{
+    box-sizing: border-box;
+    background:#82A711;
+}
+@media (max-width: 500px) {
+    .demo p {
+        font-size:12px;
+        line-height: 17px;
+    }
+    .demo h3 {
+        font-size:18px;
+        line-height:22px;
+    }
+    .demo button {
+        font-size:17px;
+    }
 }
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 a.active  {
@@ -111,7 +179,7 @@ form:focus {
 }
 
 #loader {
-    position: absolute;
+    position: fixed;
     background: black;
     width: -webkit-fill-available;
     height: 100vh;
@@ -188,6 +256,8 @@ form:focus {
 
     a.nav-item {
         font-size: 4vw;
+        text-align: center;
+        margin-left: 0;
     }
 
     .navbar-toggler-icon i {
@@ -202,6 +272,7 @@ form:focus {
         top: 15.2vw;
         width: 100%;
     }
+    
 
     .kitchenShowpage {
         background: url(../assets/images/kitchenBackground.jpg);
@@ -635,8 +706,7 @@ form:focus {
     }
 
     a.nav-item {
-        font-size: 1.4vw;
-        margin-left: auto;
+    font-size: 3.4vw;
     }
 
     .navbar-toggler-icon i {
@@ -1112,11 +1182,11 @@ form:focus {
 
     .ac-container {
         top: 22%;
-        width: 85vw;
+        width: 74vw;
         /* left: 21vw; */
         opacity: 1;
-        left: 8vw;
-        height: 40vw;
+        left: 12vw;
+        height: 35vw;
         position: absolute;
         z-index: 1;
         background: #D1D4D3;
@@ -1133,24 +1203,25 @@ form:focus {
 
     .ac-container img {
         position: absolute;
-        width: 45vw;
-        right: 5vw;
-        top: -2.5vw;
+        width: 35vw;
+        right: 7vw;
+        top: 0.5vw;
     }
 
     .ac-container p {
         width: 50%;
         color: #D1D4D3;
-        font-size: 1.2vw;
+        font-size: 0.8vw;
     }
 
     .ac-container h2 {
-        font-size: 4vw;
+        font-size: 3vw;
         margin-bottom: 2vw;
         color: #D1D4D3;
     }
 
     .ac-container .fields {
+        font-size: 0.9vw;
         margin-top: 1vw;
         z-index: 2;
     }
@@ -1160,7 +1231,7 @@ form:focus {
         color: white;
         border: none;
         width: 4vw;
-        height: 3vw;
+        height: 2vw;
         border-radius: 1rem;
         margin-left: 1vw;
         padding-left: 1.5vw;
@@ -1171,8 +1242,8 @@ form:focus {
         background: #202121;
         color: white;
         border: none;
-        width: 11vw;
-        height: 3vw;
+        width: 10vw;
+        height: 2vw;
         border-radius: 1rem;
         padding-left: 1vw;
         -webkit-highlight: none;
@@ -1188,7 +1259,7 @@ form:focus {
         border: none;
         margin-left: 1vw;
         width: 5vw;
-        height: 3vw;
+        height: 2vw;
         border-radius: 1rem;
         padding-left: 1.3vw;
         -webkit-highlight: none;
@@ -1198,7 +1269,7 @@ form:focus {
     .ac-container button {
         display: block;
         margin-top: 3rem;
-        width: 11vw;
+        width: 10vw;
         border-radius: 1rem;
         height: 2.5vw;
         background: #202121;

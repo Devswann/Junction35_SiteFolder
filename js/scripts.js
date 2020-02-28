@@ -1,3 +1,8 @@
+if ( !sessionStorage.getItem("ageVerified") && window.location != "file:///C:/Users/Devsw/Documents/Projects/Websites/Junction%2035/age-checker.html") {
+    window.location = "file:///C:/Users/Devsw/Documents/Projects/Websites/Junction%2035/age-checker.html"
+}
+
+
 // $(window).on("load", function(){
 //     $('#loader').removeAttr("preload")
 //     $('#loader').fadeOut('slow', function() {
@@ -13,16 +18,14 @@ async function preLoader(callback) {
     $(this).remove();
 }
 
+window.addEventListener('load', preLoader(yBar))
+
 function yBar() {
     $("html").css("overflow-y", "scroll")
 }
 
-window.addEventListener('load', preLoader(yBar))
-
-
-$(document).ready(function(callback){ 
+$(document).ready(function(){ 
     //THIS CODE IS ONLY NEEDED FOR DEMO:
-    if (ageCheck)
     var minAge = $('select').val();
     $('select').on('change', function(){
        minAge = $(this).val(); 
@@ -30,10 +33,10 @@ $(document).ready(function(callback){
     $('button').on('click', function(){
         $.ageCheck({minAge: minAge});
     });
-    $("html").css("overflow-y", "hidden");
+
     //END DEMO CODE.
     //THIS IS ALL YOU NEED FOR PLUGIN:
-    $.ageCheck({minAge: minAge}, callback);       
+    $.ageCheck({minAge: minAge});       
 });
 
 

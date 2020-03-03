@@ -12,111 +12,6 @@ html {
     padding: 2px;
 }
 
-.ac-overlay {
-    height: -webkit-fill-available;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    background: black;
-    width: 100%;
-}
-
-.ac-container {
-    top: 22%;
-    width: 74vw;
-    /* left: 21vw; */
-    opacity: 1;
-    left: 12vw;
-    height: 35vw;
-    position: absolute;
-    z-index: 1;
-    background: #D1D4D3;
-    display: flex;
-    flex-direction: column;
-    background: url(../assets/images/ticket.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-left: 16vw;
-    padding-right: 16vw;
-    padding-top: 9vw;
-    background-size: cover;
-}
-
-.ac-container img {
-    position: absolute;
-    width: 35vw;
-    right: 7vw;
-    top: 0.5vw;
-}
-
-.ac-container p {
-    width: 50%;
-    color: #D1D4D3;
-    font-size: 0.8vw;
-}
-
-.ac-container h2 {
-    font-size: 3vw;
-    margin-bottom: 2vw;
-    color: #D1D4D3;
-}
-
-.ac-container .fields {
-    font-size: 0.9vw;
-    margin-top: 1vw;
-    z-index: 2;
-}
-
-.ac-container .day {
-    background: #202121;
-    color: white;
-    border: none;
-    width: 4vw;
-    height: 2vw;
-    border-radius: 1rem;
-    margin-left: 1vw;
-    padding-left: 1.5vw;
-    -webkit-highlight: none;
-}
-
-.ac-container .month {
-    background: #202121;
-    color: white;
-    border: none;
-    width: 10vw;
-    height: 2vw;
-    border-radius: 1rem;
-    padding-left: 1vw;
-    -webkit-highlight: none;
-}
-
-::placeholder {
-    color: white;
-}
-
-.ac-container .year {
-    background: #202121;
-    color: white;
-    border: none;
-    margin-left: 1vw;
-    width: 5vw;
-    height: 2vw;
-    border-radius: 1rem;
-    padding-left: 1.3vw;
-    -webkit-highlight: none;
-    margin-top: 1vw;
-}
-
-.ac-container button {
-    display: block;
-    margin-top: 3rem;
-    width: 10vw;
-    border-radius: 1rem;
-    height: 2.5vw;
-    background: #202121;
-    color: white;
-    border: none;
-}
 
 .age-checker-body {
     background-color: #202121;
@@ -246,8 +141,7 @@ a.active  {
 }
 
 #preloaderVideo {
-    
-width: 100%;
+    position: fixed;
 }
 
 /* TYPOGRAPHY */
@@ -318,6 +212,112 @@ form:focus {
     #contactRightColumn h1 {
         font-size: 8vw;
         display: none;
+    }
+
+    .ac-overlay {
+        height: -webkit-fill-available;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        background: black;
+        width: 100%;
+    }
+    
+    .ac-container {
+        top: -7%;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        opacity: 1;
+        left: 0vw;
+        /* height: 35vw; */
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 4vw;
+        padding-right: 16vw;
+        padding-top: 19vw;
+        background-size: cover;
+    }
+    
+    .ac-container img {
+        position: absolute;
+        width: 88vw;
+        right: 7vw;
+        top: 50.5vw;
+    }
+    
+    .ac-container p {
+        width: 100%;
+        color: #D1D4D3;
+        font-size: 2.8vw;
+    }
+    
+    .ac-container h2 {
+        font-size: 10vw;
+        margin-bottom: 2vw;
+        color: #D1D4D3;
+    }
+    
+    .ac-container .fields {
+        font-size: 2.9vw;
+        margin-top: 1vw;
+        z-index: 2;
+    }
+    
+    .ac-container .day {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 1rem;
+        margin-left: 1vw;
+        padding-left: 1.5vw;
+        -webkit-highlight: none;
+    }
+    
+    .ac-container .month {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 17vw;
+        height: 8vw;
+        border-radius: 1rem;
+        padding-left: 1vw;
+        -webkit-highlight: none;
+    }
+    
+    ::placeholder {
+        color: white;
+    }
+    
+    .ac-container .year {
+        background: #202121;
+        color: white;
+        border: none;
+        margin-left: 1vw;
+        width: 10vw;
+        height: 8vw;
+        border-radius: 1rem;
+        padding-left: 1.3vw;
+        -webkit-highlight: none;
+        margin-top: 1vw;
+    }
+    
+    .ac-container button {
+        display: block;
+        margin-top: 2rem;
+        width: 20vw;
+        border-radius: 1rem;
+        height: 6.5vw;
+        background: #202121;
+        color: white;
+        border: none;
     }
     
     #toGoContainer {
@@ -781,6 +781,12 @@ form:focus {
         background-size: cover;
     }
 
+    #preloaderVideo {
+        position: fixed;
+        left: -143vw;
+    }
+    
+
 }
 
 @media (min-width: 576px) { 
@@ -788,6 +794,117 @@ form:focus {
     #contactRightColumn h1 {
         font-size: 8vw;
         display: none;
+    }
+
+    #preloaderVideo {
+        position: fixed;
+        left: -143vw;
+    }
+
+    .ac-overlay {
+        height: -webkit-fill-available;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        background: black;
+        width: 100%;
+    }
+    
+    .ac-container {
+        top: -7%;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        opacity: 1;
+        left: 0vw;
+        /* height: 35vw; */
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 4vw;
+        padding-right: 16vw;
+        padding-top: 19vw;
+        background-size: cover;
+    }
+    
+    .ac-container img {
+        position: absolute;
+        width: 88vw;
+        right: 7vw;
+        top: 50.5vw;
+    }
+    
+    .ac-container p {
+        width: 100%;
+        color: #D1D4D3;
+        font-size: 2.8vw;
+    }
+    
+    .ac-container h2 {
+        font-size: 10vw;
+        margin-bottom: 2vw;
+        color: #D1D4D3;
+    }
+    
+    .ac-container .fields {
+        font-size: 2.9vw;
+        margin-top: 1vw;
+        z-index: 2;
+    }
+    
+    .ac-container .day {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 1rem;
+        margin-left: 1vw;
+        padding-left: 1.5vw;
+        -webkit-highlight: none;
+    }
+    
+    .ac-container .month {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 17vw;
+        height: 8vw;
+        border-radius: 1rem;
+        padding-left: 1vw;
+        -webkit-highlight: none;
+    }
+    
+    ::placeholder {
+        color: white;
+    }
+    
+    .ac-container .year {
+        background: #202121;
+        color: white;
+        border: none;
+        margin-left: 1vw;
+        width: 10vw;
+        height: 8vw;
+        border-radius: 1rem;
+        padding-left: 1.3vw;
+        -webkit-highlight: none;
+        margin-top: 1vw;
+    }
+    
+    .ac-container button {
+        display: block;
+        margin-top: 2rem;
+        width: 20vw;
+        border-radius: 1rem;
+        height: 6.5vw;
+        background: #202121;
+        color: white;
+        border: none;
     }
 
  
@@ -1277,7 +1394,114 @@ form:focus {
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
+    
+    .ac-overlay {
+        height: -webkit-fill-available;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        background: black;
+        width: 100%;
+    }
+    
+    .ac-container {
+        top: 22%;
+        width: 74vw;
+        /* left: 21vw; */
+        opacity: 1;
+        left: 12vw;
+        height: 35vw;
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 16vw;
+        padding-right: 16vw;
+        padding-top: 9vw;
+        background-size: cover;
+    }
+    
+    .ac-container img {
+        position: absolute;
+        width: 35vw;
+        right: 7vw;
+        top: 0.5vw;
+    }
+    
+    .ac-container p {
+        width: 50%;
+        color: #D1D4D3;
+        font-size: 0.8vw;
+    }
+    
+    .ac-container h2 {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        color: #D1D4D3;
+    }
+    
+    .ac-container .fields {
+        font-size: 0.9vw;
+        margin-top: 1vw;
+        z-index: 2;
+    }
+    
+    .ac-container .day {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 4vw;
+        height: 2vw;
+        border-radius: 1rem;
+        margin-left: 1vw;
+        padding-left: 1.5vw;
+        -webkit-highlight: none;
+    }
+    
+    .ac-container .month {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 10vw;
+        height: 2vw;
+        border-radius: 1rem;
+        padding-left: 1vw;
+        -webkit-highlight: none;
+    }
+    
+    ::placeholder {
+        color: white;
+    }
+    
+    .ac-container .year {
+        background: #202121;
+        color: white;
+        border: none;
+        margin-left: 1vw;
+        width: 5vw;
+        height: 2vw;
+        border-radius: 1rem;
+        padding-left: 1.3vw;
+        -webkit-highlight: none;
+        margin-top: 1vw;
+    }
+    
+    .ac-container button {
+        display: block;
+        margin-top: 3rem;
+        width: 10vw;
+        border-radius: 1rem;
+        height: 2.5vw;
+        background: #202121;
+        color: white;
+        border: none;
+    }
+    
 
     .storyText h1 {
         font-size: 3vw;

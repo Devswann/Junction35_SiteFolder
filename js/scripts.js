@@ -1,5 +1,5 @@
-if ( !sessionStorage.getItem("ageVerified") && window.location != "file:///C:/Users/Devsw/Documents/Projects/Websites/Junction%2035/age-checker.html") {
-    window.location = "file:///C:/Users/Devsw/Documents/Projects/Websites/Junction%2035/age-checker.html"
+if ( !sessionStorage.getItem("ageVerified") && window.location != "http://junction.lionscreativemedia.com/age-checker.html") {
+    window.location = "http://junction.lionscreativemedia.com/age-checker.html"
 }
 
 

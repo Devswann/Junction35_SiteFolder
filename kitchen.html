@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Junction 35 | Kitchen & Bar</title>
-    <link rel="icon" href="assets/images/junctionLogo.png">
+    <link rel="icon" href="assets/images/junctionLogoFavicon.jpg">
     <link rel="stylesheet" href="https://use.typekit.net/ekp1clu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script
@@ -15,7 +15,7 @@
     </script>
     <script src="https://kit.fontawesome.com/056d3909b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.6.0/css/gray.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -38,9 +38,9 @@
 </nav>
 
 
-    <div id="loader">
-      <video loop playsinline muted autoplay id="preloaderVideo" src="assets/videos/trainPreLoader.mp4"></video>
-    </div>
+<div style="width: 100%;" id="loader">
+  <video loop playsinline muted autoplay id="preloaderVideo" ></video>
+</div>
 
     <div class="fluid-container kitchenHeader">
       <div class="headerHolder">
@@ -50,10 +50,10 @@
 
     <div class="fluid-container toGoPanel">
       <div class="row">
-        <div style="padding: 0" class="col-lg-7">
+        <div style="padding: 0" class="col-lg-7 pickup-image-container">
           <img src="assets/images/orderPanelImage.JPG" width="100%">
         </div>
-        <div style="display: flex; background-color: #202121;" class="col-lg-5">
+        <div style="display: flex; background-color: #202121;" class="col-lg-5 pickup-container">
           <div id="toGoContainer">
             <h2>WE NOW OFFER PICKUP</h2>
             <a href="https://www.toasttab.com/junction-35-spirits/v2/online-order#!/">
@@ -67,10 +67,10 @@
     <div class="fluid-container spiritsHeader">
       <div class="spiritsTextKitchen">
         <h2>KITCHEN & BAR FOOD</h2>
-        <p style="color: #856444;">Welcome to Junction 35
-        </p><br>
+        <h5 style="color: #856444;">Welcome to Junction 35
+        </h5><br>
 
-        <p>With the goal of creating a One-of-a-kind distillery experience for our visitors we joined our distillery with a Kitchen & Bar. Whether you are looking for handcrafted cocktails made with our spirits, slow cooked bbq or a non gmo farm raised burger Junction 35 is just the ticket. <br><br>
+        <p>With the goal of creating a one-of-a-kind distillery experience for our visitors we joined our distillery with a Kitchen & Bar. Whether you are looking for handcrafted cocktails made with our spirits, slow cooked bbq or a non gmo farm raised burger Junction 35 is just the ticket. <br><br>
 
           Our place is a casual, energetic, fun place with good food, friendly faces, real hospitality and great tasting spirits.
         </p><br>
@@ -308,11 +308,7 @@
 
           <div style="margin-top: 3rem;" class="divider"></div>
 
-          <h3 style="    TEXT-ALIGN: center;
-          color: #D1D4D3;
-          padding-top: 5rem;
-          font-size: 1.7rem;
-          padding-bottom: 5rem;">*CONSUMING RAW OR UNDERCOOKED MEATS, POULTRY, SEAFOOD, SHELLFISH, OR EGGS MAY INCREASE YOUR RISK OF FOODBORNE ILLNESS ESPECIALLY IF YOU HAVE A MEDICAL CONDITION</h3>
+          <h3 class="warning-title">*CONSUMING RAW OR UNDERCOOKED MEATS, POULTRY, SEAFOOD, SHELLFISH, OR EGGS MAY INCREASE YOUR RISK OF FOODBORNE ILLNESS ESPECIALLY IF YOU HAVE A MEDICAL CONDITION</h3>
 
     </div>
 
@@ -321,36 +317,36 @@
       </div>
   
       <div class="fluid-container contactPanel row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h3>LOCATION</h3>
           <p>2655 TEASTER LANE</p>
           <p>PIGEON FORGE, TN 37863</p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h3>HOURS OF OPERATION</h3>
           <p>MON - THURS | 11:00AM - 10:00 PM</p>
           <p>FRI & SAT | 11:00AM - 11:00PM</p>
           <p>SUN | 11:00AM </p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h3>FIND US ON SOCIAL MEDIA</h3>
           <div id="socialIcons">
             <a href="https://www.facebook.com/Junction35Spirits/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/junction35spirits/?hl=en" target="_blank"><i class="fab fa-instagram"></a></i>
             <a href="https://twitter.com/junction35s" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
+          </div>      
         </div>
       </div>
-    
+      
       <div class="fluid-container copyrightPanel">
         <p>© JUNCTION 35 SPIRITS. ALL RIGHTS RESERVED</p>
       </div>
 
       <script src="https://npmcdn.com/jquery-gray@1.6.0/js/jquery.gray.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src="js/jquery.agecheck.js"></script>
-      <script src="js/scripts.js"></script>
-  
+      <script rel="preload" as="script" src="js/jquery.agecheck.js"></script>
+      <script rel="preload" as="script" src="js/scripts.min.js"></script>
+    
   
 
 </body>

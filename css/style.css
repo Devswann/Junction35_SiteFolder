@@ -1,5 +1,3 @@
-/* FUNCTION */
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -136,8 +134,11 @@ a.active  {
 
 @font-face {
     font-family: 'Barbaro';
-    src: url(../assets/fonts/barbaro.ttf);
+    src: url('../assets/fonts/barbaro-webfont.woff2') format('woff2'),
+         url('../assets/fonts/barbaro-webfont.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 #preloaderVideo {
@@ -177,6 +178,10 @@ button:focus {
     outline: 0em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 input:focus {
     outline: 0em;
 }
@@ -201,6 +206,10 @@ form:focus {
 .headerHolder h1 {
     color: #D1D4D3;
 }
+
+.spiritsTextKitchen h5 {
+    margin-bottom: 0;
+}
 /* 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap 
@@ -209,64 +218,107 @@ form:focus {
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 575px) {
-    #contactRightColumn h1 {
+
+    .spiritsDisplayColumn img {
+        width: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
+    
+    .spiritsBio p {
+        font-size: 5vw;
+    }
+    
+    .spiritsBio {
+        height: fit-content;
+        margin-top: auto;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }    
+
+    #contactRightColumn h1 { 
         font-size: 8vw;
         display: none;
+    }
+
+    p {
+        font-size: 6vw;
+    }
+
+    .our-name-column {
+        order: 2;
+    }
+
+    .about-image-container {
+        order: 1;
     }
 
     .ac-overlay {
         height: -webkit-fill-available;
         opacity: 0.8;
         position: absolute;
-        top: 0;
-        background: black;
-        width: 100%;
-    }
-    
-    .ac-container {
-        top: -7%;
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
-        opacity: 1;
-        left: 0vw;
-        /* height: 35vw; */
-        position: absolute;
-        z-index: 1;
-        background: #D1D4D3;
-        display: flex;
-        flex-direction: column;
         background: url(../assets/images/ticket.png);
         background-position: center;
         background-repeat: no-repeat;
-        padding-left: 4vw;
-        padding-right: 16vw;
-        padding-top: 19vw;
+        top: -60px;
+
+        width: 100%;
         background-size: cover;
+        height: 120vh;
+    }
+
+    .age-checker-body {
+        display: flex;
+        overflow-y: hidden;
+    }
+    
+    .ac-container {
+        top: -14%;
+        width: fit-content;
+        margin: auto;
+        opacity: 1;
+        left: 0vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        /* padding-left: 4vw; */
+        /* padding-right: 16vw; */
+        background-size: cover;
+        width: -moz-available;
+        height: 121vh;
+        margin-top: 30%;
     }
     
     .ac-container img {
         position: absolute;
-        width: 88vw;
-        right: 7vw;
-        top: 50.5vw;
+        width: 98vw;
+        top: 47.5vw;
+        left: 0;
     }
     
     .ac-container p {
-        width: 100%;
         color: #D1D4D3;
-        font-size: 2.8vw;
+        font-size: 4vw;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
     }
     
     .ac-container h2 {
         font-size: 10vw;
         margin-bottom: 2vw;
         color: #D1D4D3;
+        text-align: center;
     }
     
     .ac-container .fields {
-        font-size: 2.9vw;
-        margin-top: 1vw;
+        font-size: 3vw;
         z-index: 2;
+        margin: 1vw auto;
     }
     
     .ac-container .day {
@@ -275,8 +327,8 @@ form:focus {
         border: none;
         width: 8vw;
         height: 8vw;
-        border-radius: 1rem;
-        margin-left: 1vw;
+        /*! border-radius: 1rem; */
+        margin-left: 3vw;
         padding-left: 1.5vw;
         -webkit-highlight: none;
     }
@@ -285,9 +337,9 @@ form:focus {
         background: #202121;
         color: white;
         border: none;
-        width: 17vw;
+        width: 19vw;
         height: 8vw;
-        border-radius: 1rem;
+        /*! border-radius: 1rem; */
         padding-left: 1vw;
         -webkit-highlight: none;
     }
@@ -300,24 +352,24 @@ form:focus {
         background: #202121;
         color: white;
         border: none;
-        margin-left: 1vw;
+        margin-left: 3vw;
         width: 10vw;
         height: 8vw;
-        border-radius: 1rem;
+        /*! border-radius: 1rem; */
         padding-left: 1.3vw;
         -webkit-highlight: none;
         margin-top: 1vw;
     }
     
     .ac-container button {
-        display: block;
+        /* display: block; */
         margin-top: 2rem;
         width: 20vw;
-        border-radius: 1rem;
-        height: 6.5vw;
+        height: 8vw;
         background: #202121;
         color: white;
         border: none;
+        margin-left: 4vw;
     }
     
     #toGoContainer {
@@ -465,7 +517,7 @@ form:focus {
         width: fit-content;
         padding: 1rem;
         color: white;
-        border: solid 7px #856444;
+        border: solid 5px #856444;
         margin: auto;
         font-size: 7vw;
     }
@@ -476,7 +528,7 @@ form:focus {
     
     .distilleryPanelHover {
         display: flex;
-        background: url(../assets/images/distilleryHover.png);
+        background: url(../assets/images/distilleryHover.jpg);
         height: 66vw;
         display: flex;
         padding: 0;
@@ -488,7 +540,7 @@ form:focus {
     }
     
     .kitchenPanelHover {
-        background: url(../assets/images/menuHover.png);
+        background: url(../assets/images/menuHover.jpg);
         height: 66vw;
         display: flex;
         padding: 0;
@@ -546,8 +598,6 @@ form:focus {
     .spiritsHeader {
         background-color: #D1D4D3;
         text-align: center;
-        /* padding-top: 3rem; */
-        padding-bottom: 2rem;
     }
     
     .spiritsHeader h2 {
@@ -562,10 +612,11 @@ form:focus {
         margin: 0;
         font-family: "whitman-display", sans-serif;
         font-weight: 600;
+        margin-bottom: 0vw;
     }
     
     .distilleryHeader {
-        background: url(../assets/images/distilleryMainImage.png);
+        background: url(../assets/images/distilleryMainImage.jpg);
         display: flex;
         height: 54vw;
         background-repeat: no-repeat;
@@ -589,18 +640,21 @@ form:focus {
         font-size: 13vw;
         letter-spacing: 0.6rem;
         color: #D1D4D3;
+        text-align: center;
     }
     
     .spiritsTextKitchen {
         padding-top: 2rem;
         width: 80%;
         margin: auto;
+        padding-bottom: 1rem;
     }
 
     .spiritsText {
-        padding-top: 2rem;
+        padding-top: 1rem;
         width: 80%;
         margin: auto;
+        margin-bottom: 5vw;
     }
 
     .storyText {
@@ -644,7 +698,6 @@ form:focus {
     .spiritsBio {
         height: fit-content;
         margin-top: auto;
-        margin-bottom: 2rem;
     }
     
     .fab {
@@ -678,7 +731,7 @@ form:focus {
     .kitchenShowpage h4 {
         text-align: center;
         /* margin-right: 10.5rem; */
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-style: italic;
         font-family: "whitman-display", sans-serif;
         font-weight: 600;
@@ -757,14 +810,11 @@ form:focus {
         font-family: 'whitman-display', sans-serif;
         font-weight: 600;
     }
-    
-    .spiritsBio p {
-        font-size: 3.3vw;
-    }
 
     #aboutImage {
         width: 100%;
-        height: 41vw;
+        height: 61vw;
+        order: 2;
     }
 
     #contactRightColumn h3 {
@@ -783,10 +833,82 @@ form:focus {
 
     #preloaderVideo {
         position: fixed;
-        left: -143vw;
+        width: 100%;
+    }
+
+    #aboutImage {
+        width: 100%;
+        height: 61vw;
+        order: 2;
+        margin-top: 1rem;
     }
     
+    
+    #contactRightColumn h3 {
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 8vw;
+    }
+    
+    .storyText p {
+        font-size: 5vw;
+        text-align: left;
+    }
+    
+    div#contactRightColumn {
+        margin-bottom: 1rem;
+    }
 
+    #aboutImage {
+        width: 100%;
+        height: 61vw;
+        order: 2;
+        margin-top: 1rem;
+    }
+    
+    .storyText h1 {
+        font-size: 7vw;
+        margin-top: 1rem;
+    }
+    
+    .storyText p {
+        font-size: 5vw;
+        text-align: center;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    
+    .storyText h1 {
+        font-size: 10vw;
+        margin-top: 1rem;
+    }
+    
+    .our-name-column h1 {
+        font-size: 10vw;
+        padding: 1rem;
+    }
+    
+    
+    .our-name-column p {
+        font-size: 5vw;
+        padding: 0 1rem;
+        margin-bottom: 5vw;
+    }
+    
+    img#our-name-image {
+        width: 95%;
+    }
+    
+    
+    h1, h2, h3, h4, h5 {
+        font-size: 9vw;
+    }
+
+    h3.warning-title {
+        font-size: 6vw;
+        padding: 5vw 0;
+        color: white;
+    }
 }
 
 @media (min-width: 576px) { 
@@ -795,10 +917,11 @@ form:focus {
         font-size: 8vw;
         display: none;
     }
+    
 
     #preloaderVideo {
         position: fixed;
-        left: -143vw;
+        width: 100%;
     }
 
     .ac-overlay {
@@ -1042,7 +1165,7 @@ form:focus {
     
     .distilleryPanelHover {
         display: flex;
-        background: url(../assets/images/distilleryHover.png);
+        background: url(../assets/images/distilleryHover.jpg);
         height: 66vw;
         display: flex;
         padding: 0;
@@ -1054,7 +1177,7 @@ form:focus {
     }
     
     .kitchenPanelHover {
-        background: url(../assets/images/menuHover.png);
+        background: url(../assets/images/menuHover.jpg);
         height: 66vw;
         display: flex;
         padding: 0;
@@ -1114,8 +1237,6 @@ form:focus {
     .spiritsHeader {
         background-color: #D1D4D3;
         text-align: center;
-        /* padding-top: 3rem; */
-        padding-bottom: 2rem;
     }
     
     .spiritsHeader h2 {
@@ -1133,7 +1254,7 @@ form:focus {
     }
     
     .distilleryHeader {
-        background: url(../assets/images/distilleryMainImage.png);
+        background: url(../assets/images/distilleryMainImage.jpg);
         display: flex;
         height: 54vw;
         background-repeat: no-repeat;
@@ -1339,7 +1460,7 @@ form:focus {
     #contactRightColumn h3 {
         margin-top: 2rem;
         text-align: left;
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     .kitchenHeader {
@@ -1356,6 +1477,105 @@ form:focus {
     #toGoContainer {
         text-align: center;
         margin: auto;
+    }
+
+    .ac-container {
+        top: -10%;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        height: 120vh;
+        opacity: 1;
+        width: 100vw;
+        left: 0vw;
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 4vw;
+        padding-right: 16vw;
+        padding-top: 19vw;
+        background-size: cover;
+    }
+
+    .pickup-container {
+        order: 1;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: 3vw auto;
+    }
+
+    .pickup-image-container {
+        order: 2;
+    }
+
+    .spiritsText {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .kitchenShowpage h4 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-family: "whitman-display", sans-serif;
+        font-weight: 600;
+    }
+
+    .spiritsTextKitchen {
+        padding-top: 2rem;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .kitchenHeader {
+        background: url(../assets/images/kitchenHeader.jpg);
+        display: flex;
+        height: 13.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #aboutImage {
+        width: 100%;
+        height: 41vw;
+        order: 1;
+        margin-top: 2vw;
+    }
+
+    #our-name-image {
+        width: 100%;
+        order: 1;
+    }
+
+    .our-name-column {
+        order: 2;
+        margin-top: 2vw;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: 0vw auto;
+    }
+
+    #contactRightColumn h3 {
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 5vw;
+    }
+
+    .fab {
+        font-size: 2rem;
+        margin: auto 1rem;
+        margin-top: 0.5rem;
     }
 
     #toGoContainer h2 {
@@ -1386,11 +1606,339 @@ form:focus {
         font-size: 1.5rem;
     }
 
+    .contactPanel p {
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: normal;
+        font-size: 2vw;
+    }
+
+    .google-maps-holder {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .ourName-Container h1 {
+        font-size: 4vw;
+        margin-top: 0rem;
+    }
+
+    .storyText h1 {
+        font-size: 4vw;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #CA8F42;
+    }
+
+    .ourName-container {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 3vw;
+    }
+
+    .ourName-container h1 {
+        color: #CA8F42;
+    }
+
+    .storyText p {
+        font-size: 2.3vw;
+        text-align: left;
+    }
+
+    .col-lg-6.about-column {
+        margin: auto;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: ABSOLUTE;
+        z-index: 1;
+        background: #202121;
+        top: 12.5vw;
+        width: 100%;
+    }
+
+    .distilleryHeader {
+        background: url(../assets/images/distilleryMainImage.jpg);
+        display: flex;
+        height: 34vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contactPanel h3 {
+        margin-top: 2rem;
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2.3vw;
+    }
+    
+    .spiritsBio p {
+        font-size: 2vw;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-size: 5vw;
+    }
+
+    .menuContainer h2 {
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer h2 {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    #bbqParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 3vw;
+        font-family: 'whitman-display', sans-serif;
+        margin-bottom: 3vw;
+    }
+
+    .warning-title {
+        TEXT-ALIGN: center;
+        color: #D1D4D3;
+        padding-top: 5rem;
+        font-size: 1.4rem;
+        padding-bottom: 5rem;
+    }
+
  }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    #preloaderVideo {
+        position: fixed;
+    }
 
+    .nav-item {
+        border-bottom: 0;
+    }
+
+    .ac-container {
+        top: 18vw;
+        width: 83vw;
+        /* left: 21vw; */
+        opacity: 1;
+        left: 8vw;
+        height: 45vw;
+        position: absolute;
+        z-index: 1;
+        background: #D1D4D3;
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/ticket.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 16vw;
+        padding-right: 16vw;
+        padding-top: 9vw;
+        background-size: cover;
+    }
+
+    .ac-container h2 {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        color: #D1D4D3;
+    }
+
+    .ac-container p {
+        width: 100%;
+        color: #D1D4D3;
+        font-size: 1.8vw;
+    }
+
+    .ac-container .fields {
+        font-size: 1.9vw;
+        margin-top: 0vw;
+        z-index: 2;
+    }
+
+    .ac-container .month {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 11vw;
+        height: 4vw;
+        border-radius: 1rem;
+        padding-left: 1vw;
+        -webkit-highlight: none;
+    }
+
+    .ac-container .day {
+        background: #202121;
+        color: white;
+        border: none;
+        width: 5vw;
+        height: 4vw;
+        border-radius: 1rem;
+        margin-left: 1vw;
+        padding-left: 1.5vw;
+        -webkit-highlight: none;
+    }
+
+    .ac-container .year {
+        background: #202121;
+        color: white;
+        border: none;
+        margin-left: 1vw;
+        width: 7vw;
+        height: 4vw;
+        border-radius: 1rem;
+        padding-left: 1.3vw;
+        -webkit-highlight: none;
+        margin-top: 1vw;
+    }
+
+    .ac-container button {
+        display: block;
+        margin-top: 2rem;
+        width: 15vw;
+        border-radius: 1rem;
+        height: 4.5vw;
+        background: #202121;
+        color: white;
+        border: none;
+    }
+
+    .storyText {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 3vw;
+    }
+
+    #contactRightColumn h3 {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    .storyText p {
+        font-size: 2.4vw;
+        text-align: left;
+    }
+
+    .newsletterPanel h2 {
+        padding: 0.5em;
+        color: #D1D4D3;
+        margin: 0;
+        font-size: 3vw;
+        letter-spacing: 0.1rem;
+    }
+
+    .contactPanel p {
+        margin: 0;
+        font-family: 'whitman-display', sans-serif;
+        font-weight: normal;
+        font-size: 2vw;
+    }
+
+    .google-maps-holder {
+        margin-top: 3vw;
+    }
+
+    .ourName-Container h1 {
+        font-size: 4vw;
+        margin-top: 0rem;
+    }
+
+    .storyText h1 {
+        font-size: 4vw;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #CA8F42;
+    }
+
+    .ourName-container {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 3vw;
+    }
+
+    .ourName-container h1 {
+        color: #CA8F42;
+    }
+
+    .storyText p {
+        font-size: 1.8vw;
+        text-align: left;
+    }
+
+    .col-lg-6.about-column {
+        margin: auto;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        position: ABSOLUTE;
+        z-index: 1;
+        background: #202121;
+        top: 12.5vw;
+        width: 100%;
+    }
+
+    .distilleryHeader {
+        background: url(../assets/images/distilleryMainImage.jpg);
+        display: flex;
+        height: 34vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contactPanel h3 {
+        margin-top: 2rem;
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 1.8vw;
+    }
+    
+    .spiritsBio p {
+        font-size: 1.8vw;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-size: 4vw;
+    }
+
+    .menuContainer h2 {
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .kitchenShowpageRightColumn .menuContainer h2 {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    #bbqParagraph {
+        font-size: 1.2rem;
+        width: 60%;
+        text-align: center;
+        margin-left: 3vw;
+        font-family: 'whitman-display', sans-serif;
+        margin-bottom: 3vw;
+    }
+
+    .warning-title {
+        TEXT-ALIGN: center;
+        color: #D1D4D3;
+        padding-top: 5rem;
+        font-size: 1.4rem;
+        padding-bottom: 5rem;
+    }
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -1403,6 +1951,39 @@ form:focus {
         top: 0;
         background: black;
         width: 100%;
+    }
+
+    .contactPanel p {
+        margin: 0;
+        font-family: whitman-display,sans-serif;
+        font-weight: 400;
+        font-size: 1.3vw;
+    }
+
+    .contactPanel h3 {
+        margin-top: 2rem;
+        font-size: 2vw;
+    }
+
+    .kitchenHeader {
+        background: url(../assets/images/kitchenHeader.jpg);
+        display: flex;
+        height: 33.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .our-name-column {
+        order: 1;
+    }
+
+    .about-image-container {
+        order: 2;
+    }
+
+    #preloaderVideo {
+        position: fixed;
+        left: 0;
     }
     
     .ac-container {
@@ -1724,7 +2305,7 @@ form:focus {
     
     .distilleryPanelHover {
         display: flex;
-        background: url(../assets/images/distilleryHover.png);
+        background: url(../assets/images/distilleryHover.jpg);
         height: 40.6rem;
         background-size: cover;
         padding: 0;
@@ -1735,7 +2316,7 @@ form:focus {
     }
     
     .kitchenPanelHover {
-        background: url(../assets/images/menuHover.png);
+        background: url(../assets/images/menuHover.jpg);
         display: flex;
         padding: 0;
         background-size: cover;
@@ -1776,6 +2357,11 @@ form:focus {
         margin: 0;
         font-family: 'whitman-display', sans-serif;
         font-weight: normal;
+        font-size: 1.2vw;
+    }
+
+    p {
+        font-size: 1.3vw;
     }
     
     .copyrightPanel {
@@ -1814,7 +2400,7 @@ form:focus {
     }
     
     .distilleryHeader {
-        background: url(../assets/images/distilleryMainImage.png);
+        background: url(../assets/images/distilleryMainImage.jpg);
         display: flex;
         height: 33.5rem;
         background-repeat: no-repeat;
@@ -2012,7 +2598,7 @@ form:focus {
 
     #aboutImage {
         width: 100%;
-        height: 41vw;
+        height: 28vw;
     }
 
     #contactRightColumn h3 {

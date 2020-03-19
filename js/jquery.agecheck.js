@@ -12,13 +12,13 @@
   $.ageCheck = function (options) {
     const settings = $.extend({
       minAge: 21,
-      redirectTo: 'index.html',
-      redirectOnFail: '',
+      redirectTo: 'http://junction35spirits.com/index.html',
+      redirectOnFail: 'index.html',
       title: 'PUNCH YOUR TICKET',
       copy: 'You must be 21 years of age or older to enter Junction 35 <IMG src="./assets/images/junctionLogo.png"></img>',
       success: null,
       successMsg: {
-        header: 'Success!',
+        header: "",
         body: 'WELCOME TO JUNCTION 35'
       },
       underAgeMsg: 'Sorry, you are not old enough to view this site...',

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="At Junction 35, we offer a variety of spirits including bourbon, rye whiskey, moonshine, vodka, gin and rum. We also offer delicious, healthy food!"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Junction 35 | Home</title>
-    <link rel="icon" href="assets/images/junctionLogo.png">
+    <link rel="icon" href="assets/images/junctionLogoFavicon.jpg">
     <link rel="stylesheet" href="https://use.typekit.net/ekp1clu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script
@@ -15,7 +16,7 @@
     </script>
     <script src="https://kit.fontawesome.com/056d3909b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.6.0/css/gray.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -38,11 +39,11 @@
     </nav>
 
     <div style="width: 100%;" id="loader">
-      <video loop playsinline muted autoplay id="preloaderVideo" src="assets/videos/trainPreLoader.mp4"></video>
+      <video loop playsinline muted autoplay id="preloaderVideo" ></video>
     </div>
 
     <div class="fluid-container homeHeader">
-      <video loop playsinline muted autoplay id="headerVideo" src="assets/videos/JunctionHeaderVideo.mp4"></video>
+      <video loop playsinline muted autoplay id="headerVideo" src="assets/videos/JunctionHeaderVideo.mov"></video>
     </div>
 
     <div class="fluid-container choicesPanel">
@@ -66,26 +67,26 @@
     </div>
 
     <div class="fluid-container contactPanel row">
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h3>LOCATION</h3>
         <p>2655 TEASTER LANE</p>
         <p>PIGEON FORGE, TN 37863</p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h3>HOURS OF OPERATION</h3>
         <p>MON - THURS | 11:00AM - 10:00 PM</p>
         <p>FRI & SAT | 11:00AM - 11:00PM</p>
         <p>SUN | 11:00AM </p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <h3>FIND US ON SOCIAL MEDIA</h3>
         <div id="socialIcons">
           <a href="https://www.facebook.com/Junction35Spirits/" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/junction35spirits/?hl=en" target="_blank"><i class="fab fa-instagram"></a></i>
           <a href="https://twitter.com/junction35s" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
+        </div>      </div>
     </div>
+
 
     <div class="fluid-container copyrightPanel">
       <p>© JUNCTION 35 SPIRITS. ALL RIGHTS RESERVED</p>
@@ -93,9 +94,8 @@
 
     <script src="https://npmcdn.com/jquery-gray@1.6.0/js/jquery.gray.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/jquery.agecheck.js"></script>
-    <script src="js/js.cookie.js"></script>
-    <script src="js/scripts.js"></script>
+    <script rel="preload" as="script" src="js/jquery.agecheck.js"></script>
+    <script rel="preload" as="script" src="js/scripts.min.js"></script>
 
 
 </body>
